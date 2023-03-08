@@ -1,0 +1,30 @@
+$whiteColor : #ffffff; 
+$yellowColor : #FFB400;
+$greyColor : #767676;
+.sidebar{
+    position: sticky;
+    float: left;
+    background-color: $whiteColor;
+}
+.sidebar > picture+p{
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 123.6%;
+    text-align: center;
+}
+.sidebar > p+p{
+    color: $greyColor;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;    
+    text-align: center;
+}
+.sidebar > picture > img{
+    border-radius: 50%;
+}
