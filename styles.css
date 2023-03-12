@@ -1,14 +1,27 @@
+* {
+  font-family: "Inter";
+}
+
+.main {
+  width: 100vw;
+  position: absolute;
+  background-color: #E5E5E5;
+}
+
 .sidebar {
+  width: 23vw;
+  min-width: 256.2px;
   position: sticky;
+  margin-left: 2vw;
+  margin-top: 1vw;
   float: left;
   background-color: #ffffff;
 }
 
 .sidebar > picture + p {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 18px;
   line-height: 123.6%;
   text-align: center;
 }
@@ -18,7 +31,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.1vw;
+  font-size: 15px;
   line-height: 24px;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
@@ -26,16 +39,72 @@
 }
 
 .sidebar > picture > img {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
 }
 
 .sidebar .logo {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .logo div {
   background: #FFB400;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  display: inline-block;
-  align-content: center;
+}
+
+.sidebar .linesb {
+  height: 1.5px;
+  width: 220px;
+  background: #F0F0F6;
+  margin: auto;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.sidebar .tb div {
+  width: 220px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .tb .highlight {
+  background-color: #FFB400;
+  margin-bottom: 0.6vw;
+  padding-right: 6px;
+  padding-left: 5px;
+}
+
+.sidebar .tb .avb {
+  color: #7EB942;
+}
+
+.sidebar .tbdown p {
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+  color: #2B2B2B;
+}
+
+.sidebar .tbdown div {
+  width: 220px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .tbdown span {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */
