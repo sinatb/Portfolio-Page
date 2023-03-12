@@ -28,3 +28,11 @@ $greyColor : #767676;
 .sidebar > picture > img{
     border-radius: 50%;
 }
+.sidebar .logo{
+    background: $yellowColor;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    align-content: center;
+}

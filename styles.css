@@ -29,4 +29,13 @@
   border-radius: 50%;
 }
 
+.sidebar .logo {
+  background: #FFB400;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  align-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
