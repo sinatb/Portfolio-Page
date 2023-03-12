@@ -8,11 +8,16 @@
   background-color: #E5E5E5;
 }
 
+.main-bar {
+  width: 73vw;
+  margin-right: 1.6vw;
+  float: right;
+  background-color: #ffffff;
+}
+
 .sidebar {
   width: 23vw;
   min-width: 256.2px;
-  margin-left: 2vw;
-  margin-top: 1vw;
   float: left;
   background-color: #ffffff;
 }

@@ -13,12 +13,17 @@ $textAvailable : #7EB942;
     position: absolute;
     background-color: $backgroundColor;
 }
+
+.main-bar{
+    width: 73vw;
+    margin-right: 1.6vw;
+    float: right;
+    background-color: $whiteColor;
+}
+
 .sidebar{
     width: 23vw;
     min-width: 256.2px;
- 
-    margin-left: 2vw;
-    margin-top: 1vw;
     float: left;
     background-color: $whiteColor;
 }
@@ -150,5 +155,3 @@ $textAvailable : #7EB942;
     line-height: 17px;
     text-transform: uppercase;
 }
-
-
