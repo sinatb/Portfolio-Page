@@ -11,7 +11,6 @@
 .sidebar {
   width: 23vw;
   min-width: 256.2px;
-  position: sticky;
   margin-left: 2vw;
   margin-top: 1vw;
   float: left;
@@ -58,11 +57,18 @@
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo div img {
+  margin: auto;
+  display: block;
 }
 
 .sidebar .linesb {
   height: 1.5px;
-  width: 220px;
+  width: 72%;
   background: #F0F0F6;
   margin: auto;
   margin-top: 1.5vw;
@@ -70,7 +76,7 @@
 }
 
 .sidebar .tb div {
-  width: 220px;
+  width: 72%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -78,7 +84,7 @@
 
 .sidebar .tb .highlight {
   background-color: #FFB400;
-  margin-bottom: 0.6vw;
+  margin-bottom: 10px;
   padding-right: 6px;
   padding-left: 5px;
 }
@@ -88,7 +94,7 @@
 }
 
 .sidebar .tbdown p {
-  margin-left: 40px;
+  margin-left: 13%;
   font-weight: 500;
   font-size: 18px;
   line-height: 22.5px;
@@ -96,15 +102,56 @@
 }
 
 .sidebar .tbdown div {
-  width: 220px;
+  width: 72%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .sidebar .tbdown span {
+  font-size: 15;
+  font-weight: 400;
+  line-height: 24px;
+  color: #767676;
   margin-top: 18px;
   margin-bottom: 18px;
+}
+
+.sidebar .tbdowni p {
+  margin-left: 13%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+  color: #2B2B2B;
+}
+
+.sidebar .tbdowni div {
+  margin-left: 13%;
+  width: 72%;
+}
+
+.sidebar .tbdowni span {
+  font-size: 15;
+  font-weight: 400;
+  line-height: 24px;
+  color: #767676;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.sidebar .button {
+  width: 72%;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10.57px;
+  background-color: #FFB400;
+  margin-left: 13%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
