@@ -10,10 +10,38 @@ $textAvailable : #7EB942;
 }
 .main{
     width: 100vw;
-    position: absolute;
+    display: flex;
     background-color: $backgroundColor;
 }
+.services{
+    margin-top: 73.1px;
+    text-align: center;
 
+}
+.services .title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 123.6%;
+}
+.services .text{
+    width: 438px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: $greyColor;
+    margin: auto;
+    margin-top: 25px;
+}
+.page-right{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-left: auto;
+    width: 73vw;
+}
 .main-bar{
     width: 73vw;
     height: 531.9px;
