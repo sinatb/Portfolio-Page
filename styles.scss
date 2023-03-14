@@ -5,26 +5,13 @@ $yellowColor : #FFB400;
 $greyColor : #767676;
 $lineColor : #F0F0F6;
 $textAvailable : #7EB942;
-*{
-    font-family:'Inter';
-}
-.main{
-    width: 100vw;
-    display: flex;
-    background-color: $backgroundColor;
-}
-.services{
-    margin-top: 73.1px;
-    text-align: center;
-
-}
-.services .title{
+@mixin righTitle{
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 123.6%;
 }
-.services .text{
+@mixin righText{
     width: 438px;
     font-weight: 400;
     font-size: 15px;
@@ -33,6 +20,95 @@ $textAvailable : #7EB942;
     color: $greyColor;
     margin: auto;
     margin-top: 25px;
+}
+@mixin eduTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: $blackColor;
+}
+*{
+    font-family:'Inter';
+}
+.main{
+    width: 100vw;
+    display: flex;
+    background-color: $backgroundColor;
+}
+.education{
+    margin-top: 66px;
+    text-align: center;
+}
+.education .title{
+    @include righTitle;
+}
+.education .text{
+    @include righText;
+}
+.education .body{
+    background-color: $whiteColor;
+    max-width: 970px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.education .text-holder{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 19%;
+}
+.education .uname{
+    @include eduTitle;
+}
+.education .cname{
+    @include eduTitle;
+    text-align: left;
+}
+.education .rText{
+    @include righText;
+    text-align: left;
+    max-width: 540px;
+}
+.education .data{
+    margin-top: 35px;
+    width: 184px;
+    display: flex;
+    flex-direction: row;
+
+}
+.education .data .date{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100.9%;
+    color: $whiteColor;
+    background-color: $yellowColor;
+    height: 18px;
+}
+.education .data .name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $blackColor;
+}
+.services{
+    margin-top: 73.1px;
+    text-align: center;
+
+}
+.services .title{
+    @include righTitle;
+}
+.services .text{
+    @include righText;
 }
 .services .holding-flex{
     margin-top: 50px;
