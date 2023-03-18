@@ -64,6 +64,8 @@ $textAvailable : #7EB942;
 }
 .education .uname{
     @include eduTitle;
+    width: 105%;
+    text-align: left;
 }
 .education .cname{
     @include eduTitle;

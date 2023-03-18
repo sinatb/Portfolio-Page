@@ -55,6 +55,8 @@
   line-height: 123.6%;
   text-transform: capitalize;
   color: #2B2B2B;
+  width: 105%;
+  text-align: left;
 }
 
 .education .cname {
