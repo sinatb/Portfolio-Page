@@ -37,53 +37,53 @@ $textAvailable : #7EB942;
     display: flex;
     background-color: $backgroundColor;
 }
-.education{
+.education, .history{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 66px;
     text-align: center;
 }
-.education .title{
+.education .title , .history .title{
     @include righTitle;
 }
-.education .text{
+.education .text , .history .text{
     @include righText;
 }
-.education .body{
+.education .body , .history .body{
     background-color: $whiteColor;
     width: 73%;
     margin-top: 50px;
     padding-top: 50px;
 }
-.education .text-holder{
+.education .text-holder , .history .text-holder{
     padding-left: 40px;
     display: flex;
     flex-direction: row;
     column-gap: 19%;
 }
-.education .uname{
+.education .uname , .history .uname{
     @include eduTitle;
     width: 105%;
     text-align: left;
 }
-.education .cname{
+.education .cname , .history .cname{
     @include eduTitle;
     text-align: left;
 }
-.education .rText{
+.education .rText , .history .rText{
     @include righText;
     text-align: left;
     width: 100%;
 }
-.education .data{
+.education .data , .history .data{
     margin-top: 35px;
     width: 190px;
     display: flex;
     flex-direction: row;
 
 }
-.education .data .date{
+.education .data .date , .history .data .date{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -97,7 +97,7 @@ $textAvailable : #7EB942;
     background-color: $yellowColor;
     height: 18px;
 }
-.education .data .name{
+.education .data .name , .history .data .name{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -198,7 +198,8 @@ $textAvailable : #7EB942;
     display: flex;
     flex-direction: column;
 }
-.main-bar > img{
+.main-bar > picture{
+    max-width: 100%;
     margin-right: 2%;
     margin-top: 1.7%;
     float: right;
@@ -251,7 +252,7 @@ $textAvailable : #7EB942;
 }
 
 .sidebar{
-    width: 23vw;
+    width: 23%;
     min-width: 256.2px;
     float: left;
     background-color: $whiteColor;

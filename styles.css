@@ -8,7 +8,7 @@
   background-color: #E5E5E5;
 }
 
-.education {
+.education, .history {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +16,14 @@
   text-align: center;
 }
 
-.education .title {
+.education .title, .history .title {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 123.6%;
 }
 
-.education .text {
+.education .text, .history .text {
   width: 33%;
   font-weight: 400;
   font-size: 15px;
@@ -34,21 +34,21 @@
   margin-top: 25px;
 }
 
-.education .body {
+.education .body, .history .body {
   background-color: #ffffff;
   width: 73%;
   margin-top: 50px;
   padding-top: 50px;
 }
 
-.education .text-holder {
+.education .text-holder, .history .text-holder {
   padding-left: 40px;
   display: flex;
   flex-direction: row;
   column-gap: 19%;
 }
 
-.education .uname {
+.education .uname, .history .uname {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -59,7 +59,7 @@
   text-align: left;
 }
 
-.education .cname {
+.education .cname, .history .cname {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -69,7 +69,7 @@
   text-align: left;
 }
 
-.education .rText {
+.education .rText, .history .rText {
   width: 33%;
   font-weight: 400;
   font-size: 15px;
@@ -82,14 +82,14 @@
   width: 100%;
 }
 
-.education .data {
+.education .data, .history .data {
   margin-top: 35px;
   width: 190px;
   display: flex;
   flex-direction: row;
 }
 
-.education .data .date {
+.education .data .date, .history .data .date {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -104,7 +104,7 @@
   height: 18px;
 }
 
-.education .data .name {
+.education .data .name, .history .data .name {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -226,7 +226,8 @@
   flex-direction: column;
 }
 
-.main-bar > img {
+.main-bar > picture {
+  max-width: 100%;
   margin-right: 2%;
   margin-top: 1.7%;
   float: right;
@@ -284,7 +285,7 @@
 }
 
 .sidebar {
-  width: 23vw;
+  width: 23%;
   min-width: 256.2px;
   float: left;
   background-color: #ffffff;
