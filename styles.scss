@@ -29,13 +29,15 @@ $textAvailable : #7EB942;
     text-transform: capitalize;
     color: $blackColor;
 }
+body{
+    background-color: $backgroundColor;
+}
 *{
     font-family:'Inter';
 }
 .main{
     width: 100%;
     display: flex;
-    background-color: $backgroundColor;
 }
 .education, .history{
     display: flex;
@@ -126,7 +128,7 @@ $textAvailable : #7EB942;
 .services .holding-flex{
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -209,15 +211,14 @@ $textAvailable : #7EB942;
     float: right;
 }
 .main-bar .main-bar-intro{
-    margin-top: 105.52px;
+    margin-top: 7.958vw;
     display: inline-block;
 }
 .main-bar .main-bar-intro div{
    
     margin-left: 60px;
-    font-size: 48px;
+    font-size: calc(3.62vw + 10px);
     font-weight: 700;
-    line-height: 59px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -229,15 +230,15 @@ $textAvailable : #7EB942;
     color: $greyColor;
     margin-top: 25px;
     margin-left: 60px;
-    font-size: 16px;
+    font-size: calc(1.207vw + 5px);
     font-weight: 400;
-    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
 }
 .main-bar .main-bar-button{
     margin-left: 60px;
     margin-top: 50px;
+    margin-bottom: 50px;
     height: 51px;
     width: 154px;
     border-radius: 5px;
@@ -254,13 +255,44 @@ $textAvailable : #7EB942;
 .main-bar .main-bar-button img{
     margin-left: 11px;
 }
-
+@media screen and (max-width: 950px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: $backgroundColor;
+    }
+    .page-right .main-bar{
+        justify-self: center;
+        order: 1;
+    }
+    .page-right .services{
+        order: 2;
+    }
+    .page-right .education{
+        order: 3;
+    }
+    .page-right .history{
+        order: 4;
+    }
+    .sidebar{
+        order: 2;
+        margin-top: 50px;
+        margin-left: 60px;
+        align-self: center;
+    } 
+}
+@media  (max-width: 750px) {
+    .education .text-holder, .history .text-holder{
+        flex-direction: column;
+    }
+}
 .sidebar{
     width: 23%;
     min-width: 256.2px;
     float: left;
     background-color: $whiteColor;
-}
+} 
 .sidebar > picture+p{
     font-style: normal;
     font-weight: 500;
