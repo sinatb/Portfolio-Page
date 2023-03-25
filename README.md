@@ -15,3 +15,6 @@ This Template can be used as the main template for personal websites. You only n
 
 ## License
 This Project is Distributed under the MIT license. Read `LICENSE.txt` for more information. 
+
+## Contact
+Sina Taheri - sinatb.dev@gmail.com , @sina_t_b (telegram)
