@@ -1,0 +1,24 @@
+@mixin righTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 123.6%;
+}
+@mixin righText{
+    width: 33%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: $greyColor;
+    margin: auto;
+    margin-top: 25px;
+}
+@mixin eduTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: $blackColor;
+}
